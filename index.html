@@ -13,17 +13,43 @@
 </head>
 
 <body>
-    <div class="d-flex flex-column align-items-center">
-        <div class="overflow-auto">
-            <img src="laptop-1.jpg" alt="Laptop-1">
-            <img src="laptop-2.jpg" alt="Laptop-2">
-            <img src="laptop-3.jpg" alt="Laptop-3">
-            <img src="laptop-4.jpg" alt="Laptop-4">
+    <div class="mt-2 d-flex flex-column align-items-center">
+        <div id="carousel" class="carousel slide w-75" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./laptop-1.jpg" class="w-100" alt="Laptop 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./laptop-2.jpg" class="w-100" alt="Laptop 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./laptop-3.jpg" class="w-100" alt="Laptop 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./laptop-4.jpg" class="w-100" alt="Laptop 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
 
         <!-- Main -->
-        <main class="content w-75 d-flex flex-column justify-content-start">
-            <div class="event w-100 d-flex">
+        <main class="content mt-3 w-75 d-flex flex-column justify-content-start">
+            <div class="event mb-3 w-100 d-flex">
                 <div class="search-product w-50">
                     <input type="text" class="w-75 p-1" placeholder="Search product...">
 
